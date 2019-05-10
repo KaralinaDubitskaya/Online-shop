@@ -1,0 +1,49 @@
+<resources>
+    <!--Titles-->
+    <string name="app_name">Online Shop</string>
+    <string name="basket_name">Basket</string>
+
+    <!--Amount-->
+    <string name="amount">Amount: </string>
+    <string name="chosen_amount">Chosen: </string>
+
+    <!--Errors-->
+    <string name="not_full_info">Please, fill all fields.</string>
+    <string name="empty_image">Please, add photo.</string>
+    <string name="error_message">Sorry, something went wrong.</string>
+    <string name="add_no_products_in_basket">You can\'t add 0 products to the basket.</string>
+
+    <!--ViewPager-->
+    <string name="rows">List</string>
+    <string name="columns">Grid</string>
+
+    <!--Basket-->
+    <string name="search">Search</string>
+    <string name="add">Add</string>
+    <string name="basket">Basket</string>
+    <string name="buy">Buy</string>
+    <string name="clear_basket">Clear basket</string>
+    <string name="product_added_to_basket">The product was added to the basket.</string>
+    <string name="product_deleted">The product was deleted.</string>
+
+    <!--Layout-->
+    <string name="title">Title</string>
+    <string name="producer">Producer</string>
+    <string name="price">Price: </string>
+    <string name="details">Details</string>
+    <string name="create_product">Create product</string>
+    <string name="add_to_basket">Add to basket</string>
+    <string name="delete">Delete</string>
+
+    <!--Keys-->
+    <string name="id_key">id</string>;
+    <string name="title_key">title</string>;
+    <string name="publisher_key">publisher</string>;
+    <string name="description_key">description</string>;
+    <string name="price_key">price</string>;
+    <string name="amount_key">amount</string>;
+    <string name="uri_key">uri</string>;
+
+    <!--Search-->
+    <string name="search_hint">Search product</string>
+</resources>

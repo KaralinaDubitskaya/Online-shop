@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/app_bar_clear_basket"
+        android:icon="@drawable/ic_clear_basket"
+        android:title="@string/clear_basket"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/app_bar_basket_buy"
+        android:icon="@drawable/ic_buy"
+        android:title="@string/buy"
+        app:showAsAction="ifRoom" />
+</menu>

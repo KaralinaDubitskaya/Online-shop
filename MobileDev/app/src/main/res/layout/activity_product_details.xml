@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.ProductDetailsActivity">
+
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:src="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/title"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImageView"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/Producer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/producer"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/Title"
+            app:layout_constraintTop_toBottomOf="@+id/Title"
+            tools:text="Producer" />
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/Producer"
+            app:layout_constraintTop_toBottomOf="@+id/Producer"
+            tools:text="Price" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/Price"
+            app:layout_constraintTop_toBottomOf="@+id/Price"
+            tools:text="Details" />
+
+        <TextView
+            android:id="@+id/AmountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/amount"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/Description"
+            app:layout_constraintTop_toBottomOf="@+id/Description"
+            tools:text="Amount: " />
+
+        <TextView
+            android:id="@+id/ChosenAmountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/chosen_amount"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/AmountTitle"
+            app:layout_constraintTop_toBottomOf="@+id/AmountTitle" />
+
+        <EditText
+            android:id="@+id/ChosenAmount"
+            android:digits="0123456789"
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLength="10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ChosenAmountTitle"
+            app:layout_constraintTop_toBottomOf="@+id/AmountTitle" />
+
+        <Button
+            android:id="@+id/ButtonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/add_to_basket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChosenAmount"
+            tools:text="Add to bucket" />
+
+        <Button
+            android:id="@+id/ButtonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ButtonAdd"
+            tools:text="Delete" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/AppMenuSearch"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/AppMenuAdd"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/AppMenuBasket"
+        android:icon="@drawable/ic_basket"
+        android:title="@string/basket"
+        app:showAsAction="ifRoom" />
+</menu>
